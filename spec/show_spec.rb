@@ -22,7 +22,6 @@ describe Show do
     expect(show.characters.collect { |s| s.name }).to include("Homer Simpson")
   end
 
-
   it "can build its characters through a method" do
     show.name = "Happy Endings"
     show.characters.build(:name => "Penny")
